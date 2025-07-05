@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Servicios | FP Consultorías</title>
+
+  <!-- Meta SEO -->
+  <meta name="description" content="Consultoría especializada en análisis de datos, transformación estratégica y optimización de procesos para pequeñas y medianas empresas.">
+  <meta name="keywords" content="consultoría empresarial, análisis de datos, KPIs, procesos, estrategia, pyme, mejora continua">
+  <meta name="author" content="FP Consultorías">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/FPConsultorias/Fpconsultorias/main/favicon.ico" />
+
+  <!-- Tipografía + Bootstrap -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
     }
     nav {
       background: #0056D2;
       padding: 1rem;
+      display: flex;
+      align-items: center;
+    }
+    nav img.logo {
+      height: 40px;
+      margin-right: 10px;
     }
     nav a {
       color: white;
-      margin-right: 1rem;
+      margin-right: 1.5rem;
       text-decoration: none;
       font-weight: 500;
       font-size: 1.1rem;
-    }
-    section {
-      padding: 2rem;
     }
     .section-title {
       color: #0056D2;
@@ -36,23 +47,8 @@
     }
     h4 {
       color: #0056D2;
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin-bottom: 1rem;
-    }
-    p {
-      text-align: justify;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #f1f1f1;
-      color: #444;
-      margin-top: 2rem;
-    }
-    img.logo {
-      height: 40px;
-      margin-right: 10px;
-      vertical-align: middle;
     }
     .servicio {
       margin-bottom: 4rem;
@@ -61,18 +57,28 @@
       border-radius: 10px;
       padding: 2rem;
     }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f1f1f1;
+      color: #444;
+      margin-top: 2rem;
+    }
+    p {
+      text-align: justify;
+    }
     img {
       max-width: 100%;
       height: auto;
       border-radius: 8px;
     }
   </style>
-  
 </head>
 <body>
 
-<nav>
-  <img src="logo.png" alt="logo" class="logo">
+<!-- Navegación -->
+<nav class="px-4">
+  <img src="logo.png" alt="Logo de FP Consultorías" class="logo">
   <a href="index.html">Inicio</a>
   <a href="nosotros.html">Nosotros</a>
   <a href="servicios.html">Servicios</a>
@@ -80,74 +86,79 @@
   <a href="contacto.html">Contacto</a>
 </nav>
 
-<section>
-  <h2 class="section-title">Nuestros Servicios</h2>
+<!-- Servicios -->
+<main class="container my-5">
+  <section>
+    <h2 class="section-title">Nuestros Servicios</h2>
 
-  <!-- Servicio 1 -->
-  <div class="row align-items-center servicio">
-    <div class="col-md-6">
-      <h4>1. Descifrando el Poder de los Datos</h4>
-      <p>Analizamos a fondo tus métricas clave. Si no las tienes, diseñamos dashboards para que tomes decisiones estratégicas, alineadas con tus metas.</p>
-      <p class="fst-italic text-muted">"Convierte los datos en tu mayor ventaja competitiva."</p>
+    <!-- Servicio 1 -->
+    <div class="row align-items-center servicio">
+      <div class="col-md-6">
+        <h4>1. Descifrando el Poder de los Datos</h4>
+        <p>Analizamos a fondo tus métricas clave. Si no las tienes, diseñamos dashboards para que tomes decisiones estratégicas, alineadas con tus metas.</p>
+        <p class="fst-italic text-muted">"Convierte los datos en tu mayor ventaja competitiva."</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="Descifrando_el_poder_de_los_datos.webp" alt="Visualización de datos estratégicos">
+      </div>
     </div>
-    <div class="col-md-6 text-center">
-      <img src="Descifrando_el_poder_de_los_datos.webp" alt="Descifrando el Poder de los Datos" loading="lazy">
-    </div>
-  </div>
 
-  <!-- Servicio 2 -->
-  <div class="row align-items-center servicio flex-md-row-reverse">
-    <div class="col-md-6">
-      <h4>2. Transformación Estratégica</h4>
-      <p>Aplicamos PHVA para revisar tus procesos, eliminamos desperdicios y reforzamos lo esencial. Mejora continua asegurada.</p>
-      <p class="fst-italic text-muted">"No solo cambiamos procesos, transformamos resultados."</p>
+    <!-- Servicio 2 -->
+    <div class="row align-items-center servicio flex-md-row-reverse">
+      <div class="col-md-6">
+        <h4>2. Transformación Estratégica</h4>
+        <p>Aplicamos PHVA para revisar tus procesos, eliminamos desperdicios y reforzamos lo esencial. Mejora continua asegurada.</p>
+        <p class="fst-italic text-muted">"No solo cambiamos procesos, transformamos resultados."</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="Desbloqueo_del_potencial_organizacional.webp" alt="Consultoría en transformación organizacional">
+      </div>
     </div>
-    <div class="col-md-6 text-center">
-      <img src="Desbloqueo_del_potencial_organizacional.webp" alt="Transformación Estratégica" loading="lazy">
-    </div>
-  </div>
 
-  <!-- Servicio 3 -->
-  <div class="row align-items-center servicio">
-    <div class="col-md-6">
-      <h4>3. Procesos que Impulsan Resultados</h4>
-      <p>Documentamos y optimizamos tu operación para asegurar eficiencia, cumplimiento y adaptabilidad.</p>
-      <p class="fst-italic text-muted">"Procesos claros hoy, decisiones estratégicas mañana."</p>
+    <!-- Servicio 3 -->
+    <div class="row align-items-center servicio">
+      <div class="col-md-6">
+        <h4>3. Procesos que Impulsan Resultados</h4>
+        <p>Documentamos y optimizamos tu operación para asegurar eficiencia, cumplimiento y adaptabilidad.</p>
+        <p class="fst-italic text-muted">"Procesos claros hoy, decisiones estratégicas mañana."</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="Procesos_que_impulsan_resultados.webp" alt="Optimización de procesos empresariales">
+      </div>
     </div>
-    <div class="col-md-6 text-center">
-      <img src="Procesos_que_impulsan_resultados.webp" alt="Procesos que Impulsan Resultados" loading="lazy">
-    </div>
-  </div>
 
-  <!-- Servicio 4 -->
-  <div class="row align-items-center servicio flex-md-row-reverse">
-    <div class="col-md-6">
-      <h4>4. Estrategia Integral Empresarial</h4>
-      <p>Evaluamos tus procesos clave, riesgos y desempeño para estructurar soluciones que potencien tu cultura organizacional.</p>
-      <p class="fst-italic text-muted">"Transformamos ideas sueltas en una hoja de ruta clara."</p>
+    <!-- Servicio 4 -->
+    <div class="row align-items-center servicio flex-md-row-reverse">
+      <div class="col-md-6">
+        <h4>4. Estrategia Integral Empresarial</h4>
+        <p>Evaluamos tus procesos clave, riesgos y desempeño para estructurar soluciones que potencien tu cultura organizacional.</p>
+        <p class="fst-italic text-muted">"Transformamos ideas sueltas en una hoja de ruta clara."</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="Estrategia_integral_para_el_exito_empresarial.webp" alt="Evaluación estratégica empresarial">
+      </div>
     </div>
-    <div class="col-md-6 text-center">
-      <img src="Estrategia_integral_para_el_exito_empresarial.webp" alt="Estrategia Integral" loading="lazy">
-    </div>
-  </div>
 
-  <!-- Servicio 5 -->
-  <div class="row align-items-center servicio">
-    <div class="col-md-6">
-      <h4>5. Matemáticas al Servicio de tu Negocio</h4>
-      <p>Modelamos escenarios con programación lineal, simulaciones y optimización matemática para maximizar beneficios y reducir riesgos.</p>
-      <p class="fst-italic text-muted">"Porque las mejores decisiones también se calculan."</p>
+    <!-- Servicio 5 -->
+    <div class="row align-items-center servicio">
+      <div class="col-md-6">
+        <h4>5. Matemáticas al Servicio de tu Negocio</h4>
+        <p>Modelamos escenarios con programación lineal, simulaciones y optimización matemática para maximizar beneficios y reducir riesgos.</p>
+        <p class="fst-italic text-muted">"Porque las mejores decisiones también se calculan."</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="Matematicas_al_servicio_de_tu_negocio.webp" alt="Modelos matemáticos para negocios">
+      </div>
     </div>
-    <div class="col-md-6 text-center">
-      <img src="Matematicas_al_servicio_de_tu_negocio.webp" alt="Matemáticas al Servicio" loading="lazy">
-    </div>
-  </div>
 
-  <p class="text-center mt-4">
-    👉 <a href="https://wa.me/573164433239" class="btn btn-success" target="_blank">Solicita tu propia consultoría por WhatsApp</a>
-  </p>
-</section>
+    <!-- CTA -->
+    <p class="text-center mt-4">
+      👉 <a href="https://wa.me/573164433239" class="btn btn-success" target="_blank">Solicita tu propia consultoría por WhatsApp</a>
+    </p>
+  </section>
+</main>
 
+<!-- Footer -->
 <footer>
   &copy; 2025 FP Consultorías. Todos los derechos reservados.
 </footer>
