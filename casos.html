@@ -1,47 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Casos de Éxito | FP Consultorías</title>
-  <!-- Fuente Inter -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Meta SEO -->
+  <meta name="description" content="Conoce casos reales de transformación empresarial logrados por FP Consultorías en eficiencia operativa, automatización y optimización de procesos.">
+  <meta name="keywords" content="consultoría, casos de éxito, automatización, eficiencia, KPIs, análisis de datos, procesos">
+  <meta name="author" content="FP Consultorías">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/FPConsultorias/Fpconsultorias/main/favicon.ico" />
+
+  <!-- Tipografía y estilos -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
   <style>
     body {
       font-family: 'Inter', sans-serif;
+      font-size: 1.2rem;
       margin: 0;
       padding: 0;
-      font-size: 1.3rem;
     }
     nav {
       background: #0056D2;
       padding: 1rem;
+      display: flex;
+      align-items: center;
+    }
+    nav img.logo {
+      height: 40px;
+      margin-right: 10px;
     }
     nav a {
       color: white;
-      margin-right: 1rem;
+      margin-right: 1.5rem;
       text-decoration: none;
       font-weight: 500;
       font-size: 1.1rem;
     }
-    section {
-      padding: 2rem;
-    }
     .section-title {
       color: #0056D2;
-      text-align: center;
       font-size: 2.2rem;
+      text-align: center;
       margin-bottom: 2rem;
     }
-    h4 {
+    h3 {
       color: #0056D2;
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin-bottom: 1rem;
     }
-    p, ul {
-      text-align: justify;
+    .caso {
+      background-color: #f8f9fa;
+      box-shadow: 0 0 20px rgba(0,0,0,0.08);
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 3rem;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
     }
     footer {
       text-align: center;
@@ -50,26 +71,17 @@
       color: #444;
       margin-top: 2rem;
     }
-    img.logo {
-      height: 40px;
-      margin-right: 10px;
-      vertical-align: middle;
-    }
-    .caso {
-      margin-bottom: 4rem;
-    }
-    .caso img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
+    p, ul {
+      text-align: justify;
     }
   </style>
-  
 </head>
+
 <body>
 
-<nav>
-  <img src="logo.png" alt="logo" class="logo">
+<!-- Navegación -->
+<nav class="px-4">
+  <img src="logo.png" alt="Logo FP Consultorías" class="logo">
   <a href="index.html">Inicio</a>
   <a href="nosotros.html">Nosotros</a>
   <a href="servicios.html">Servicios</a>
@@ -77,113 +89,95 @@
   <a href="contacto.html">Contacto</a>
 </nav>
 
-<section>
-  <h2 class="section-title">Casos de Éxito</h2>
+<!-- Contenido -->
+<main class="container my-5">
+  <section>
+    <h2 class="section-title">Casos de Éxito</h2>
 
-  <!-- Caso 1 Rediseñado - se mantiene como estaba -->
-  <div class="row align-items-center shadow-lg p-4 rounded mb-5" style="background-color: #f8f9fa;">
-    <div class="col-md-6 text-center">
-      <img src="Caso_de_exito_asignacion_de_flota.webp" alt="Optimización Flota" class="img-fluid rounded shadow-sm" style="max-height: 300px;">
+    <!-- Caso 1 -->
+    <div class="row align-items-center caso">
+      <div class="col-md-6 text-center">
+        <img src="Caso_de_exito_asignacion_de_flota.webp" alt="Asignación de flota optimizada">
+      </div>
+      <div class="col-md-6">
+        <h3>🚛 Optimización Estratégica de Flota</h3>
+        <p><strong>Desafío:</strong> Asignación manual diaria de +100 vehículos, con errores y baja eficiencia.</p>
+        <p><strong>Solución:</strong></p>
+        <ul>
+          <li>Macros en Excel + AMPL + NEOS Server</li>
+          <li>Asignación en 5 min vs 60 min</li>
+          <li>+15% eficiencia y trazabilidad</li>
+        </ul>
+        <p class="fst-italic text-muted">"Convertimos un cuello de botella en ventaja competitiva medible."</p>
+        <a href="https://wa.me/573164433239" class="btn btn-success mt-2" target="_blank">Solicita una solución similar</a>
+      </div>
     </div>
-    <div class="col-md-6">
-      <h4 class="text-primary fw-bold mb-3">🚛 Optimización Estratégica de Flota</h4>
-      <p><strong>Desafío:</strong> Asignación manual diaria de más de 100 vehículos, con demoras, errores y baja eficiencia operativa.</p>
-      <p><strong>Solución:</strong></p>
-      <ul>
-        <li>Macros avanzadas en Excel</li>
-        <li>Modelo en AMPL con ejecución en NEOS Server</li>
-        <li>Criterios técnicos y reglas de prioridad</li>
-      </ul>
-      <p><strong>Resultados:</strong></p>
-      <ul>
-        <li>+15% eficiencia al reducir kilómetros innecesarios</li>
-        <li>Asignación en solo 5 minutos (vs. 60 anteriores)</li>
-        <li>Mayor trazabilidad y cumplimiento operativo</li>
-      </ul>
-      <p class="fst-italic text-muted">"Convertimos un cuello de botella en una ventaja competitiva medible."</p>
-      <a href="https://wa.me/573164433239" class="btn btn-success mt-3" target="_blank">Solicita una solución similar</a>
-    </div>
-  </div>
 
-  <!-- Caso 2 Rediseñado -->
-  <div class="row align-items-center shadow-lg p-4 rounded mb-5" style="background-color: #f8f9fa;">
-    <div class="col-md-6 mb-3 mb-md-0 text-center">
-      <img src="Revision_listas_de_chequeo.webp" alt="Revisión Operacional" class="img-fluid rounded shadow-sm" style="max-height: 300px;">
+    <!-- Caso 2 -->
+    <div class="row align-items-center caso flex-md-row-reverse">
+      <div class="col-md-6 text-center">
+        <img src="Revision_listas_de_chequeo.webp" alt="Revisión automatizada de turnos">
+      </div>
+      <div class="col-md-6">
+        <h3>📝 Revisión Operacional Automatizada</h3>
+        <p><strong>Desafío:</strong> Validación manual entre fuentes digitales y físicas.</p>
+        <p><strong>Solución:</strong> Excel + Visual Basic con filtros y trazabilidad.</p>
+        <ul>
+          <li>-50% tiempo de revisión</li>
+          <li>Mayor confiabilidad</li>
+          <li>Integración con SGI</li>
+        </ul>
+        <p class="fst-italic text-muted">"Una tarea crítica ahora es rápida, clara y confiable."</p>
+        <a href="https://wa.me/573164433239" class="btn btn-success mt-2" target="_blank">Automatiza tus revisiones</a>
+      </div>
     </div>
-    <div class="col-md-6">
-      <h4 class="text-primary fw-bold mb-3">📝 Revisión Operacional Automatizada</h4>
-      <p><strong>Desafío:</strong> Validar manualmente turnos y novedades con múltiples fuentes físicas y digitales.</p>
-      <p><strong>Solución:</strong> Desarrollo en Excel con Visual Basic para filtrar datos según la asignación real.</p>
-      <ul>
-        <li>Lectura automatizada y filtros inteligentes</li>
-        <li>Comparación visual entre lo planificado y reportado</li>
-        <li>Consolidación en archivo único para trazabilidad</li>
-      </ul>
-      <p class="mb-3"><strong>Impacto:</strong></p>
-      <ul>
-        <li>Reducción del tiempo de revisión en al menos 50%</li>
-        <li>Integración al sistema de gestión de calidad</li>
-        <li>Mayor confiabilidad en la detección de inconsistencias</li>
-      </ul>
-      <p class="fst-italic text-muted">"Transformamos una tarea crítica y repetitiva en un proceso claro, rápido y confiable."</p>
-      <a href="https://wa.me/573164433239" class="btn btn-success mt-3" target="_blank">Quiero automatizar mis revisiones</a>
-    </div>
-  </div>
 
-  <!-- Caso 3 Rediseñado -->
-  <div class="row align-items-center shadow-lg p-4 rounded mb-5" style="background-color: #f8f9fa;">
-    <div class="col-md-6 text-center">
-      <img src="Disponibilidad_de_flota.webp" alt="Disponibilidad Vehicular" class="img-fluid rounded shadow-sm" style="max-height: 300px;">
+    <!-- Caso 3 -->
+    <div class="row align-items-center caso">
+      <div class="col-md-6 text-center">
+        <img src="Disponibilidad_de_flota.webp" alt="Dashboard de flota en tiempo real">
+      </div>
+      <div class="col-md-6">
+        <h3>🚦 Disponibilidad Vehicular en Tiempo Real</h3>
+        <p><strong>Desafío:</strong> Falta de visibilidad + presupuesto limitado.</p>
+        <p><strong>Solución:</strong> Formularios + Google Sheets.</p>
+        <ul>
+          <li>Dashboard operativo</li>
+          <li>Información clave para logística</li>
+          <li>Sin costo de licencias</li>
+        </ul>
+        <p class="fst-italic text-muted">"Logramos resultados que antes solo ofrecían sistemas costosos."</p>
+        <a href="https://wa.me/573164433239" class="btn btn-success mt-2" target="_blank">Quiero una solución similar</a>
+      </div>
     </div>
-    <div class="col-md-6">
-      <h4 class="text-primary fw-bold mb-3">🚦 Disponibilidad Vehicular en Tiempo Real</h4>
-      <p><strong>Desafío:</strong> Falta de visibilidad operativa y presupuesto limitado para software especializado.</p>
-      <p><strong>Solución:</strong> Implementación de Google Forms y Sheets para reportar estados diarios y visualizar disponibilidad.</p>
-      <ul>
-        <li>Dashboard operativo con métricas clave</li>
-        <li>Información útil para decisiones logísticas</li>
-        <li>Fácil uso, sin costo de licencias</li>
-      </ul>
-      <p class="mb-3"><strong>Impacto:</strong></p>
-      <ul>
-        <li>Control en tiempo real</li>
-        <li>Mayor eficiencia operativa</li>
-        <li>Implementación sin inversión en software</li>
-      </ul>
-      <p class="fst-italic text-muted">"Con herramientas gratuitas y visión estratégica, logramos resultados que antes solo ofrecían sistemas costosos."</p>
-      <a href="https://wa.me/573164433239" class="btn btn-success mt-3" target="_blank">Me interesa una solución de bajo costo</a>
-    </div>
-  </div>
 
-  <!-- Caso 4 Rediseñado -->
-  <div class="row align-items-center shadow-lg p-4 rounded mb-5" style="background-color: #f8f9fa;">
-    <div class="col-md-6 mb-3 mb-md-0 text-center">
-      <img src="odometro.webp" alt="Seguimiento Odómetro" class="img-fluid rounded shadow-sm" style="max-height: 300px;">
+    <!-- Caso 4 -->
+    <div class="row align-items-center caso flex-md-row-reverse">
+      <div class="col-md-6 text-center">
+        <img src="odometro.webp" alt="Seguimiento técnico de odómetro">
+      </div>
+      <div class="col-md-6">
+        <h3>📊 Seguimiento Confiable del Odómetro</h3>
+        <p><strong>Desafío:</strong> Inconsistencias entre odómetros y telemetría.</p>
+        <p><strong>Solución:</strong> Validación técnica y análisis por patrones.</p>
+        <ul>
+          <li>Intervalos de confianza</li>
+          <li>Cumplimiento contractual</li>
+          <li>Soporte para mantenimiento y calidad</li>
+        </ul>
+        <p class="fst-italic text-muted">"Transformamos incertidumbre en evidencia técnica."</p>
+        <a href="https://wa.me/573164433239" class="btn btn-success mt-2" target="_blank">Controla tu kilometraje</a>
+      </div>
     </div>
-    <div class="col-md-6">
-      <h4 class="text-primary fw-bold mb-3">📊 Seguimiento Confiable del Odómetro</h4>
-      <p><strong>Desafío:</strong> Dificultad para validar precisión del kilometraje con múltiples fuentes de datos.</p>
-      <p><strong>Solución:</strong> Procedimiento técnico para validar, comparar y analizar datos de telemetría y odómetros físicos.</p>
-      <ul>
-        <li>Detección de inconsistencias</li>
-        <li>Intervalos de confianza por patrón</li>
-        <li>Correcciones formales validadas</li>
-      </ul>
-      <p class="mb-3"><strong>Impacto:</strong></p>
-      <ul>
-        <li>Mayor confiabilidad en registros</li>
-        <li>Cumplimiento contractual asegurado</li>
-        <li>Proceso transversal en calidad y mantenimiento</li>
-      </ul>
-      <p class="fst-italic text-muted">"Convertimos incertidumbre en evidencia técnica útil para decisiones estratégicas."</p>
-      <a href="https://wa.me/573164433239" class="btn btn-success mt-3" target="_blank">Quiero un control confiable del kilometraje</a>
-    </div>
-  </div>
-   <p class="text-center mt-4">
-    👉 <a href="https://wa.me/573164433239" class="btn btn-success" target="_blank">Solicita tu propia consultoría por WhatsApp</a>
-  </p>
-</section>
 
+    <!-- CTA final -->
+    <p class="text-center mt-5">
+      👉 <a href="https://wa.me/573164433239" class="btn btn-success btn-lg" target="_blank">Solicita tu propia consultoría por WhatsApp</a>
+    </p>
+  </section>
+</main>
+
+<!-- Footer -->
 <footer>
   &copy; 2025 FP Consultorías. Todos los derechos reservados.
 </footer>
