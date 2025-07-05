@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
- 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contacto | FP Consultorías</title>
 
-  <!-- Fuente Inter -->
+  <!-- Meta SEO -->
+  <meta name="description" content="Contáctanos para una consultoría personalizada en análisis de datos, optimización de procesos y gestión empresarial.">
+  <meta name="keywords" content="consultoría, contacto, procesos, KPIs, optimización, empresas, servicios">
+  <meta name="author" content="FP Consultorías">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/FPConsultorias/Fpconsultorias/main/favicon.ico" />
+
+  <!-- Estilos -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -16,63 +22,65 @@
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
     }
     nav {
       background: #0056D2;
       padding: 1rem;
+      display: flex;
+      align-items: center;
+    }
+    nav img.logo {
+      height: 40px;
+      margin-right: 10px;
     }
     nav a {
       color: white;
-      margin-right: 1rem;
+      margin-right: 1.5rem;
       text-decoration: none;
       font-weight: 500;
       font-size: 1.1rem;
     }
     section {
-      padding: 2rem;
-      max-width: 600px;
+      padding: 3rem 2rem;
+      max-width: 700px;
       margin: auto;
     }
     .section-title {
       color: #0056D2;
       text-align: center;
-      margin-bottom: 2rem;
       font-size: 2rem;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #f1f1f1;
-      color: #444;
-      margin-top: 2rem;
-    }
-    img.logo {
-      height: 40px;
-      margin-right: 10px;
-      vertical-align: middle;
+      margin-bottom: 2rem;
     }
     .whatsapp-button {
-      display: block;
-      width: fit-content;
-      margin: 2rem auto;
       background: #25D366;
       color: white;
       padding: 12px 20px;
       border-radius: 50px;
       text-decoration: none;
       font-weight: bold;
+      display: block;
+      width: fit-content;
+      margin: 2rem auto;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f1f1f1;
+      color: #444;
+      margin-top: 3rem;
     }
     p {
-      text-align: justify;
+      text-align: center;
     }
   </style>
- 
 </head>
+
 <body>
-  
-<nav>
-  <img src="logo.png" alt="logo" class="logo">
+
+<!-- Navegación -->
+<nav class="px-4">
+  <img src="logo.png" alt="Logo FP Consultorías" class="logo">
   <a href="index.html">Inicio</a>
   <a href="nosotros.html">Nosotros</a>
   <a href="servicios.html">Servicios</a>
@@ -80,36 +88,47 @@
   <a href="contacto.html">Contacto</a>
 </nav>
 
+<!-- Formulario -->
 <section>
   <h2 class="section-title">Contáctanos</h2>
-  <form action="https://formsubmit.co/fernandopineda@fpconsultorias.it.com" method="POST">
+  <form action="https://formsubmit.co/fernandopineda@fpconsultorias.it.com" method="POST" autocomplete="off">
     <div class="mb-3">
-      <label for="name" class="form-label">Nombre</label>
-      <input type="text" class="form-control" id="name" name="name" required>
+      <label for="name" class="form-label">Nombre completo</label>
+      <input type="text" class="form-control" id="name" name="name" required aria-label="Nombre completo">
     </div>
     <div class="mb-3">
       <label for="email" class="form-label">Correo electrónico</label>
-      <input type="email" class="form-control" id="email" name="email" required>
+      <input type="email" class="form-control" id="email" name="email" required aria-label="Correo electrónico">
     </div>
     <div class="mb-3">
       <label for="message" class="form-label">Mensaje</label>
-      <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+      <textarea class="form-control" id="message" name="message" rows="5" required aria-label="Mensaje"></textarea>
     </div>
-    <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+
+    <!-- Protección antispam -->
+    <input type="text" name="_honey" style="display:none">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://www.fpconsultorias.it.com/">
+
+    <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
   </form>
 
-  <a href="https://wa.me/573164433239" target="_blank" class="whatsapp-button">Escríbenos por WhatsApp</a>
+  <!-- WhatsApp -->
+  <a href="https://wa.me/573164433239" target="_blank" class="whatsapp-button">
+    Escríbenos por WhatsApp
+  </a>
 
-  <p class="text-center mt-4">
+  <!-- Info adicional -->
+  <p class="mt-4">
     También puedes escribirnos a <strong>contacto@fpconsultorias.it.com</strong><br>
-    o visitar nuestro <a href="https://www.linkedin.com/in/fernando-pineda456" target="_blank">perfil de LinkedIn</a>.
+    o visitar nuestro <a href="https://www.linkedin.com/in/fernando-pineda456" target="_blank">LinkedIn</a>.
   </p>
 </section>
 
+<!-- Footer -->
 <footer>
   &copy; 2025 FP Consultorías. Todos los derechos reservados.
 </footer>
 
 </body>
 </html>
-
