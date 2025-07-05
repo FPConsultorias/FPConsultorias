@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nosotros | FP Consultorías</title>
-  <!-- Fuente Inter -->
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/FPConsultorias/Fpconsultorias/main/favicon.ico" />
+
+  <!-- Tipografía + Bootstrap -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
     }
     nav {
       background: #0056D2;
       padding: 1rem;
+      display: flex;
+      align-items: center;
+    }
+    nav img.logo {
+      height: 40px;
+      margin-right: 10px;
     }
     nav a {
       color: white;
-      margin-right: 1rem;
+      margin-right: 1.5rem;
       text-decoration: none;
       font-weight: 500;
       font-size: 1.1rem;
     }
-    section {
-      padding: 2rem;
-    }
     .section-title, h3 {
       color: #0056D2;
-      font-size: 2.2rem;
-      margin-bottom: 1.5rem;
     }
     footer {
       text-align: center;
@@ -41,27 +44,21 @@
       color: #444;
       margin-top: 2rem;
     }
-    img.logo {
-      height: 40px;
-      margin-right: 10px;
-      vertical-align: middle;
-    }
     p {
       text-align: justify;
     }
     img {
       max-width: 100%;
       height: auto;
-      loading: lazy;
+      border-radius: 8px;
     }
   </style>
-
- 
 </head>
 <body>
 
-<nav>
-  <img src="logo.png" alt="logo" class="logo">
+<!-- Navegación -->
+<nav class="px-4">
+  <img src="logo.png" alt="Logo de FP Consultorías" class="logo">
   <a href="index.html">Inicio</a>
   <a href="nosotros.html">Nosotros</a>
   <a href="servicios.html">Servicios</a>
@@ -69,39 +66,44 @@
   <a href="contacto.html">Contacto</a>
 </nav>
 
-<section>
-  <h2 class="section-title text-center">Sobre Nosotros</h2>
-  <p><strong>Objetivo:</strong> Brindar a gerentes y dueños de empresas la seguridad de contar con información clara, precisa y confiable sobre el desempeño de su negocio, estableciendo una base sólida para la toma de decisiones estratégicas que impulsen el crecimiento sostenible, la competitividad y la resiliencia empresarial.</p>
-</section>
+<!-- Contenido -->
+<main class="container my-5">
+  
+  <section>
+    <h2 class="section-title text-center mb-4">Sobre Nosotros</h2>
+    <p><strong>Objetivo:</strong> Brindar a gerentes y dueños de empresas la seguridad de contar con información clara, precisa y confiable sobre el desempeño de su negocio, estableciendo una base sólida para la toma de decisiones estratégicas que impulsen el crecimiento sostenible, la competitividad y la resiliencia empresarial.</p>
+  </section>
 
-<section>
-  <div class="row align-items-center">
-    <div class="col-md-6">
-      <h3>Misión</h3>
-      <p>Ayudar a las empresas a identificar y desbloquear su verdadero potencial mediante la optimización y armonización de sus procesos, logrando un desempeño eficiente y sostenible. Creo sinergia entre procedimientos y procesos, alineándolos estratégicamente para alcanzar los objetivos organizacionales. En cada análisis, integro la gestión de riesgos para mitigar impactos y garantizar resultados efectivos. Proveo herramientas prácticas basadas en indicadores clave de desempeño (KPIs), permitiendo decisiones informadas que impulsen el crecimiento continuo.</p>
+  <section class="my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h3>Misión</h3>
+        <p>Ayudar a las empresas a identificar y desbloquear su verdadero potencial mediante la optimización y armonización de sus procesos, logrando un desempeño eficiente y sostenible. Creo sinergia entre procedimientos y procesos, alineándolos estratégicamente para alcanzar los objetivos organizacionales. En cada análisis, integro la gestión de riesgos para mitigar impactos y garantizar resultados efectivos. Proveo herramientas prácticas basadas en indicadores clave de desempeño (KPIs), permitiendo decisiones informadas que impulsen el crecimiento continuo.</p>
+      </div>
+      <div class="col-md-6 text-center mt-4 mt-md-0">
+        <img src="Mision.webp" alt="Ilustración de la misión de FP Consultorías" class="img-fluid rounded shadow">
+      </div>
     </div>
-    <div class="col-md-6 text-center">
-      <img src="Mision.webp" alt="Misión FP Consultorías" class="img-fluid rounded shadow">
+
+    <div class="mt-5">
+      <h3>Visión</h3>
+      <p>En los próximos 5 años, seremos el aliado estratégico de las organizaciones más dinámicas de la región Calima, contribuyendo a un entorno empresarial competitivo e innovador. Nos comprometemos a ofrecer soluciones de vanguardia con un firme enfoque en la mejora continua, actuando como catalizadores del cambio. Juntos, construiremos relaciones de confianza y colaboración con nuestros clientes, quienes serán el motor de nuestro crecimiento compartido, trabajando unidos para crear un futuro próspero, eficiente y lleno de oportunidades.</p>
     </div>
-  </div>
+  </section>
 
-  <div class="mt-5">
-    <h3>Visión</h3>
-    <p>En los próximos 5 años, seremos el aliado estratégico de las organizaciones más dinámicas de la región Calima, contribuyendo a un entorno empresarial competitivo e innovador. Nos comprometemos a ofrecer soluciones de vanguardia con un firme enfoque en la mejora continua, actuando como catalizadores del cambio. Juntos, construiremos relaciones de confianza y colaboración con nuestros clientes, quienes serán el motor de nuestro crecimiento compartido, trabajando unidos para crear un futuro próspero, eficiente y lleno de oportunidades.</p>
-  </div>
-</section>
+  <section class="my-5">
+    <h3 class="text-center">Nuestros Valores</h3>
+    <div class="text-center my-4">
+      <img src="Valores1.webp" alt="Imagen ilustrativa de los valores organizacionales de FP Consultorías" class="img-fluid rounded shadow mb-4">
+    </div>
+    <p class="text-center">
+      👉 <a href="https://wa.me/573164433239" class="btn btn-success" target="_blank">Solicita tu propia consultoría por WhatsApp</a>
+    </p>
+  </section>
 
-<section>
-  <h3 class="text-center">Nuestros Valores</h3>
-  <div class="text-center">
-    <img src="Valores1.webp" alt="Valores FP Consultorías" class="img-fluid rounded shadow mb-4">
-  </div>
+</main>
 
-  <p class="text-center mt-4">
-    👉 <a href="https://wa.me/573164433239" class="btn btn-success" target="_blank">Solicita tu propia consultoría por WhatsApp</a>
-  </p>
-</section>
-
+<!-- Footer -->
 <footer>
   &copy; 2025 FP Consultorías. Todos los derechos reservados.
 </footer>
