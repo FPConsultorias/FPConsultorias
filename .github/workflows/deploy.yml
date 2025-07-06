@@ -13,6 +13,7 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout del repositorio
         uses: actions/checkout@v4
@@ -23,7 +24,7 @@ jobs:
       - name: Subir archivos
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .  # Usa la raíz donde está tu index.html
+          path: .  # Asegúrate de que aquí esté tu index.html
 
       - name: Desplegar en GitHub Pages
         id: deployment
