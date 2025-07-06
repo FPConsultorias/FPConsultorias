@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5D6HZVHS');</script>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Casos de Éxito | FP Consultorías</title>
@@ -18,7 +11,7 @@
   <meta name="author" content="FP Consultorías">
   <link rel="icon" href="https://raw.githubusercontent.com/FPConsultorias/Fpconsultorias/main/favicon.ico" />
 
-  <!-- Fuentes y Estilos -->
+  <!-- Fuentes y estilos -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -45,6 +38,13 @@
       margin-bottom: 3rem;
     }
 
+    .caso img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1rem;
+    }
+
     h3 {
       color: #003366;
       font-size: 1.4rem;
@@ -53,27 +53,12 @@
     }
 
     .caso p, .caso ul {
-      text-align: justify;
-    }
-
-    .caso ul {
-      padding-left: 1.4rem;
-    }
-
-    .caso img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-bottom: 1rem;
+      text-align: left;
     }
 
     .btn-success {
       background-color: #25D366;
       border: none;
-    }
-
-    .nav-link {
-      color: white !important;
-      font-weight: 500;
     }
 
     footer {
@@ -104,38 +89,13 @@
       fill: white;
     }
   </style>
-<style>
-  .imagen-caso {
-    max-height: 450px;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 1.5rem auto;
-    display: block;
-  }
-</style>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CreativeWork",
-  "name": "Casos de Éxito - FP Consultorías",
-  "url": "https://www.fpconsultorias.it.com/casos",
-  "description": "Historias reales de empresas que mejoraron sus procesos y resultados gracias a nuestra consultoría."
-}
-</script>
-
-  
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D6HZVHS"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-3">
     <a class="navbar-brand d-flex align-items-center" href="/">
-   <img src="/Logo.webp" alt="Logo FP Consultorías" class="img-fluid" style="max-height: 50px;">
+      <img src="/Logo.webp" alt="Logo FP Consultorías" class="img-fluid" style="max-height: 50px;">
       FP Consultorías
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -152,111 +112,77 @@
     </div>
   </nav>
 
- <main class="container my-5">
-  <h2 class="section-title text-center">Casos de Éxito Reales</h2>
+  <!-- MAIN -->
+  <main class="container my-5">
+    <h2 class="section-title">Casos de Éxito Reales</h2>
 
-  <!-- Caso 1 -->
-<div class="row justify-content-center my-4">
-  <div class="col-md-8 text-center">
-    <img 
-      src="/Caso_de_exito_asignacion_de_flota.webp" 
-      alt="Optimización de flota de transporte" 
-      class="img-fluid rounded shadow imagen-nosotros" 
-      loading="lazy" 
-      width="600" 
-      height="400">
-  </div>
-</div>
-      <h3 class="text-primary">🚛 Optimización de Flota en Tiempo Récord</h3>
-      <p class="text-justify">
-        Una empresa de transporte enfrentaba diariamente el desafío de asignar manualmente más de 100 vehículos, evaluando variables como mantenimientos, tipos de vehículo y cobertura de rutas. Este proceso operativo no solo tardaba más de una hora, sino que además era vulnerable a errores y decisiones poco eficientes.
-      </p>
-      <p class="text-justify">
-        Implementamos una solución integral basada en macros de Excel y un modelo de optimización matemática con AMPL, ejecutado en NEOS Server. Ahora, en menos de 5 minutos, el sistema realiza una asignación precisa, balanceada y alineada con los objetivos del negocio.
-      </p>
-      <p><strong>Resultado:</strong> Se redujo el tiempo de asignación en un 90%, se mejoró la trazabilidad y se optimizaron rutas con un ahorro del 15% en kilómetros recorridos innecesariamente.</p>
+    <!-- Caso 1 -->
+    <div class="caso">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center">
+          <img src="/Caso_de_exito_asignacion_de_flota.webp" alt="Optimización de flota de transporte" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-primary">🚛 Optimización de Flota en Tiempo Récord</h3>
+          <p>Una empresa de transporte enfrentaba diariamente el desafío de asignar manualmente más de 100 vehículos, evaluando variables como mantenimientos, tipos de vehículo y cobertura de rutas.</p>
+          <p>Implementamos una solución integral basada en macros de Excel y un modelo de optimización matemática con AMPL, ejecutado en NEOS Server.</p>
+          <p><strong>Resultado:</strong> Reducción del tiempo en un 90%, trazabilidad mejorada y ahorro del 15% en recorridos.</p>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <!-- Caso 2 -->
-  <div class="row justify-content-center my-4">
-  <div class="col-md-8 text-center">
-    <img 
-      src="/Revision_listas_de_chequeo.webp" 
-      alt="Automatización de listas de chequeo" 
-      class="img-fluid rounded shadow imagen-nosotros" 
-      loading="lazy" 
-      width="600" 
-      height="400">
-  </div>
-  <div class="col-md-6">
-      <h3 class="text-primary">📝 Automatización de la Revisión Operacional</h3>
-      <p class="text-justify">
-        En una operación de transporte, validar los turnos de los operadores y las condiciones de los vehículos requería revisar físicamente listas de chequeo y cruzarlas con múltiples archivos Excel. Esto implicaba largas jornadas administrativas y un alto riesgo de omisiones.
-      </p>
-      <p class="text-justify">
-        Desarrollamos una herramienta en Excel con Visual Basic que lee, organiza y filtra la información de forma automatizada. La solución muestra gráficamente lo planificado frente a lo realmente ejecutado, facilitando la detección de inconsistencias.
-      </p>
-      <p><strong>Resultado:</strong> Reducción del tiempo de revisión en un 50%, archivo único para seguimiento, integración al sistema de gestión de calidad.</p>
+    <!-- Caso 2 -->
+    <div class="caso">
+      <div class="row align-items-center flex-md-row-reverse">
+        <div class="col-md-6 text-center">
+          <img src="/Revision_listas_de_chequeo.webp" alt="Automatización de listas de chequeo" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-primary">📝 Automatización de la Revisión Operacional</h3>
+          <p>Validar turnos y condiciones de vehículos requería revisar listas de chequeo y cruzarlas manualmente.</p>
+          <p>Desarrollamos una herramienta en Excel con Visual Basic que organiza, filtra e identifica inconsistencias gráficamente.</p>
+          <p><strong>Resultado:</strong> 50% menos tiempo de revisión, archivo único para seguimiento y control integrado al sistema de calidad.</p>
+        </div>
+      </div>
     </div>
-   <div class="col-md-6">
 
-  <!-- Caso 3 -->
- <div class="row align-items-center caso mb-5">
-  <div class="col-md-6 text-center mb-3 mb-md-0">
-    <img 
-      src="/Disponibilidad_de_flota.webp" 
-      alt="Control de disponibilidad vehicular" 
-      class="img-fluid rounded shadow imagen-nosotros" 
-      loading="lazy" 
-      width="600" 
-      height="400">
-  </div>
-  <div class="col-md-6">
-      <h3 class="text-primary">🚦 Disponibilidad Vehicular con Herramientas Gratuitas</h3>
-      <p class="text-justify">
-        Una empresa no contaba con recursos para adquirir software especializado de seguimiento de flota, pero necesitaba conocer en tiempo real qué vehículos estaban disponibles o fuera de servicio. La falta de información generaba decisiones tardías y pérdida de control operativo.
-      </p>
-      <p class="text-justify">
-        Diseñamos un sistema usando Google Forms y Google Sheets que permite a mantenimiento y operaciones reportar el estado diario de los vehículos. Con fórmulas automáticas y filtros inteligentes, se genera un dashboard visual con indicadores de disponibilidad.
-      </p>
-      <p><strong>Resultado:</strong> Implementación sin costo, control operacional fortalecido, toma de decisiones en tiempo real.</p>
+    <!-- Caso 3 -->
+    <div class="caso">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center">
+          <img src="/Disponibilidad_de_flota.webp" alt="Disponibilidad vehicular" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-primary">🚦 Disponibilidad Vehicular con Herramientas Gratuitas</h3>
+          <p>Sin software especializado, una empresa requería conocer la disponibilidad de vehículos en tiempo real.</p>
+          <p>Diseñamos un sistema con Google Forms y Sheets para reportes diarios, con dashboard visual y filtros inteligentes.</p>
+          <p><strong>Resultado:</strong> Control operacional fortalecido y toma de decisiones en tiempo real, sin inversión adicional.</p>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <!-- Caso 4 -->
-  <div class="row align-items-center caso mb-5 flex-md-row-reverse">
-  <div class="col-md-6 text-center mb-3 mb-md-0">
-    <img 
-      src="/odometro.webp" 
-      alt="Control de odómetro en flotas" 
-      class="img-fluid rounded shadow imagen-nosotros" 
-      loading="lazy" 
-      width="600" 
-      height="400">
-  </div>
-  <div class="col-md-6">
-    <!-- Aquí va el contenido textual del caso -->
-      <h3 class="text-primary">📊 Control Confiable del Kilometraje</h3>
-      <p class="text-justify">
-        Para una empresa con más de 300 vehículos, el control de kilómetros recorridos era crucial, pero los datos llegaban desde distintas fuentes (varios sistemas de telemetría y odómetros físicos), generando confusión y falta de confiabilidad.
-      </p>
-      <p class="text-justify">
-        Se desarrolló un procedimiento técnico que compara las fuentes, identifica desviaciones mediante reglas y patrones, y calcula intervalos de confianza que ayudan a validar los datos. Cuando se detectan errores, el sistema los señala y solicita correcciones formales.
-      </p>
-      <p><strong>Resultado:</strong> Mayor confiabilidad, cumplimiento contractual, proceso estándar integrado al sistema de calidad.</p>
+    <!-- Caso 4 -->
+    <div class="caso">
+      <div class="row align-items-center flex-md-row-reverse">
+        <div class="col-md-6 text-center">
+          <img src="/odometro.webp" alt="Control de odómetro en flotas" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-primary">📊 Control Confiable del Kilometraje</h3>
+          <p>El control de kilómetros recorridos era inconsistente por múltiples fuentes de datos.</p>
+          <p>Desarrollamos un procedimiento técnico para comparar fuentes, identificar errores y generar intervalos de confianza.</p>
+          <p><strong>Resultado:</strong> Mayor confiabilidad en datos, cumplimiento contractual y mejora del sistema de calidad.</p>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <!-- CTA -->
-  <div class="text-center mt-4">
-    <a href="https://wa.me/573164433239" class="btn btn-success btn-lg" target="_blank">Solicita tu propia consultoría por WhatsApp</a>
-  </div>
-</main>
+    <!-- CTA -->
+    <div class="text-center mt-5">
+      <a href="https://wa.me/573164433239" class="btn btn-success btn-lg" target="_blank">Solicita tu propia consultoría por WhatsApp</a>
+    </div>
+  </main>
 
-
-
-  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <!-- BOTÓN WHATSAPP -->
   <a href="https://wa.me/573164433239" class="btn-floating-whatsapp" target="_blank" aria-label="WhatsApp FP Consultorías">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
       <path d="M13.601 2.326a7.43 7.43 0 0 0-10.6 0 7.437 7.437 0 0 0-1.6 8.066L.165 15.093l4.775-1.253a7.424 7.424 0 0 0 3.584.914h.003a7.43 7.43 0 0 0 5.236-12.428Zm-5.236 11.28a6.226 6.226 0 0 1-3.173-.874l-.227-.135-2.829.743.755-2.754-.148-.236a6.27 6.27 0 1 1 5.622 3.256Z"/>
