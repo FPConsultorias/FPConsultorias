@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -11,24 +10,24 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto | FP Consultorías</title>
+  <title>Contáctanos | FP Consultorías</title>
 
   <!-- Meta SEO -->
-  <meta name="description" content="Contáctanos para una consultoría personalizada en análisis de datos, optimización de procesos y gestión empresarial.">
-  <meta name="keywords" content="consultoría, contacto, procesos, KPIs, optimización, empresas, servicios">
+  <meta name="description" content="Contáctanos para consultoría en eficiencia operativa, análisis de datos, automatización y gestión de procesos.">
+  <meta name="keywords" content="consultoría empresarial, contacto, análisis de datos, automatización, KPIs, eficiencia, gerencia, transporte, logística, Colombia">
   <meta name="author" content="FP Consultorías">
 
   <!-- Favicon -->
   <link rel="icon" href="https://raw.githubusercontent.com/FPConsultorias/Fpconsultorias/main/favicon.ico" />
 
-  <!-- Fuentes y estilos -->
+  <!-- Fonts & Bootstrap -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
     }
     nav.navbar {
       background-color: #0056D2;
@@ -45,29 +44,39 @@
       color: #0056D2;
       font-size: 2rem;
       margin-bottom: 1.5rem;
+      text-align: center;
     }
     section {
       padding: 3rem 1rem;
       max-width: 900px;
       margin: auto;
     }
-    .whatsapp-button {
-      background: #25D366;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      width: fit-content;
-      margin: 2rem auto;
+    .whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      z-index: 1000;
+      background-color: #25D366;
+      border-radius: 50%;
+      padding: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
       transition: background 0.3s ease;
     }
-    .whatsapp-button:hover {
-      background: #20bd5a;
+    .whatsapp-float:hover {
+      background-color: #1ebe5b;
+    }
+    .whatsapp-float svg {
+      width: 30px;
+      height: 30px;
+      fill: white;
+    }
+    iframe {
+      width: 100%;
+      height: 650px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      background: white;
     }
     footer {
       text-align: center;
@@ -77,19 +86,14 @@
       margin-top: 3rem;
       font-size: 0.95rem;
     }
-    iframe {
-      border: none;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    p {
+    .info-contacto {
       text-align: center;
+      margin-top: 2rem;
     }
   </style>
 </head>
 
 <body>
-
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D6HZVHS"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -97,7 +101,7 @@
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark px-3">
     <a class="navbar-brand d-flex align-items-center" href="/">
-      <img src="Logo.webp" alt="Logo FP Consultorías" class="logo">
+      <img src="/Logo.webp" alt="Logo FP Consultorías" class="logo">
       FP Consultorías
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
@@ -114,39 +118,37 @@
     </div>
   </nav>
 
-  <!-- FORMULARIO -->
+  <!-- CONTACTO -->
   <section>
-    <h2 class="section-title text-center">Contáctanos</h2>
+    <h2 class="section-title">Contáctanos</h2>
 
     <iframe 
       src="https://forms.zohopublic.com/contactofpconsu1/form/Contactanos/formperma/N9JombFKiG97Sbw1MciZkcQEreuEPz8IKly-RZWQvvw" 
-      width="100%" 
-      height="700" 
-      allowfullscreen>
+      loading="lazy" 
+      title="Formulario de contacto FP Consultorías">
     </iframe>
 
-    <!-- BOTÓN WHATSAPP -->
-    <a href="https://wa.me/573164433239" target="_blank" class="whatsapp-button">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-whatsapp" viewBox="0 0 16 16">
-        <path d="M13.601 2.326a7.43 7.43 0 0 0-10.6 0 7.437 7.437 0 0 0-1.6 8.066L.165 15.093l4.775-1.253a7.424 7.424 0 0 0 3.584.914h.003a7.43 7.43 0 0 0 5.236-12.428Zm-5.236 11.28a6.226 6.226 0 0 1-3.173-.874l-.227-.135-2.829.743.755-2.754-.148-.236a6.27 6.27 0 1 1 5.622 3.256Zm3.416-4.68c-.187-.094-1.102-.543-1.272-.605-.17-.064-.294-.094-.417.093-.123.187-.48.604-.588.729-.108.123-.217.14-.404.047-.187-.094-.791-.291-1.506-.928-.557-.497-.933-1.11-1.042-1.297-.108-.187-.012-.288.082-.382.084-.084.187-.217.28-.326.093-.108.124-.187.186-.31.062-.124.031-.233-.016-.326-.047-.093-.417-.98-.572-1.34-.15-.36-.303-.311-.417-.317a.889.889 0 0 0-.375.016c-.123.047-.32.093-.49.28-.17.187-.646.633-.646 1.543s.662 1.79.754 1.913c.093.124 1.303 1.986 3.157 2.783.441.19.785.303 1.053.387.442.141.844.12 1.164.073.355-.053 1.102-.45 1.258-.885.155-.437.155-.812.108-.885-.047-.07-.17-.108-.355-.202Z"/>
-      </svg>
-      Escríbenos por WhatsApp
-    </a>
-
-    <!-- INFORMACIÓN ADICIONAL -->
-    <p class="mt-4">
-      También puedes escribirnos a<br>
-      <strong>contacto@fpconsultorias.it.com</strong><br>
-      o visitar nuestro <a href="https://www.linkedin.com/in/fernando-pineda456" target="_blank">LinkedIn</a>.
-    </p>
+    <div class="info-contacto">
+      <p>
+        ¿Prefieres escribirnos directamente?<br>
+        Envíanos un correo a <strong>contacto@fpconsultorias.it.com</strong><br>
+        o conéctate por <a href="https://www.linkedin.com/in/fernando-pineda456" target="_blank">LinkedIn</a>.
+      </p>
+    </div>
   </section>
+
+  <!-- BOTÓN WHATSAPP FLOTANTE -->
+  <a href="https://wa.me/573164433239" class="whatsapp-float" target="_blank" aria-label="WhatsApp FP Consultorías">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+      <path d="M13.601 2.326a7.43 7.43 0 0 0-10.6 0 7.437 7.437 0 0 0-1.6 8.066L.165 15.093l4.775-1.253a7.424 7.424 0 0 0 3.584.914h.003a7.43 7.43 0 0 0 5.236-12.428ZM8.365 13.606a6.226 6.226 0 0 1-3.173-.874l-.227-.135-2.829.743.755-2.754-.148-.236a6.27 6.27 0 1 1 5.622 3.256Zm3.416-4.68c-.187-.094-1.102-.543-1.272-.605-.17-.064-.294-.094-.417.093-.123.187-.48.604-.588.729-.108.123-.217.14-.404.047-.187-.094-.791-.291-1.506-.928-.557-.497-.933-1.11-1.042-1.297-.108-.187-.012-.288.082-.382.084-.084.187-.217.28-.326.093-.108.124-.187.186-.31.062-.124.031-.233-.016-.326-.047-.093-.417-.98-.572-1.34-.15-.36-.303-.311-.417-.317a.889.889 0 0 0-.375.016c-.123.047-.32.093-.49.28-.17.187-.646.633-.646 1.543s.662 1.79.754 1.913c.093.124 1.303 1.986 3.157 2.783.441.19.785.303 1.053.387.442.141.844.12 1.164.073.355-.053 1.102-.45 1.258-.885.155-.437.155-.812.108-.885-.047-.07-.17-.108-.355-.202Z"/>
+    </svg>
+  </a>
 
   <!-- FOOTER -->
   <footer>
     &copy; 2025 FP Consultorías. Todos los derechos reservados.
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
