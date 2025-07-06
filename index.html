@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5D6HZVHS');</script>
-<!-- End Google Tag Manager -->
-  
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5D6HZVHS');</script>
+  <!-- End Google Tag Manager -->
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO -->
   <title>Consultoría para PYMES | Optimización y KPIs | FP Consultorías</title>
   <meta name="description" content="Consultoría empresarial especializada en análisis de datos, procesos y KPIs. Ayudamos a pequeñas y medianas empresas a crecer con estrategia y eficiencia." />
   <meta name="keywords" content="consultoría, análisis de datos, KPIs, procesos, pymes, empresas, estrategia empresarial" />
   <meta name="author" content="FP Consultorías" />
 
-  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/FPConsultorias/Fpconsultorias/main/favicon.ico" />
-
-  <!-- Fuentes y estilos -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 
@@ -33,29 +27,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       margin: 0;
       padding: 0;
     }
-    nav {
-      background: #0056D2;
-      padding: 1rem;
-      display: flex;
-      align-items: center;
-    }
-    nav img.logo {
-      height: 40px;
-      margin-right: 10px;
-    }
-    nav span.brand-name {
-      color: white;
-      font-weight: 600;
-      font-size: 1.2rem;
-      margin-right: 2rem;
-    }
-    nav a {
-      color: white;
-      margin-right: 1rem;
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 1rem;
-    }
     header {
       background: #e9f0fb;
       padding: 4rem 2rem;
@@ -65,9 +36,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color: #0056D2;
       font-weight: 700;
       font-size: 2.5rem;
-    }
-    section {
-      padding: 4rem 2rem;
     }
     .btn-primary {
       background-color: #0056D2;
@@ -104,64 +72,73 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <body>
 
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D6HZVHS"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D6HZVHS"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<!-- Barra de navegación -->
-<nav>
-  <img src="Logo.webp" alt="Logo de FP Consultorías" class="logo" />
-  <span class="brand-name">FP Consultorías</span>
-  <a href="/">Inicio</a>
-  <a href="/nosotros/">Nosotros</a>
-  <a href="/servicios/">Servicios</a>
-  <a href="/casos/">Casos de Éxito</a>
-  <a href="/contacto/">Contacto</a>
-</nav>
+  <!-- NAVBAR RESPONSIVE -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary px-3">
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <img src="Logo.webp" alt="Logo FP Consultorías" class="logo" style="height: 40px; margin-right: 10px;">
+      <span>FP Consultorías</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="/nosotros/">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="/servicios/">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="/casos/">Casos de Éxito</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contacto/">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>Desbloqueando el potencial de tu negocio</h1>
+    <p class="lead">
+      Somos <strong>FP Consultorías</strong>: transformamos datos, procesos y estrategia en resultados sostenibles.
+    </p>
+    <a href="/contacto/" class="btn btn-primary mt-3">Contáctanos</a><br />
+    <a href="https://wa.me/573164433239" target="_blank" rel="noopener" class="btn btn-whatsapp mt-3">Escríbenos por WhatsApp</a>
+  </header>
 
-  <!-- Encabezado principal -->
-<header>
-  <h1>Desbloqueando el potencial de tu negocio</h1>
-  <p class="lead">
-    Somos <strong>FP Consultorías</strong>: transformamos datos, procesos y estrategia en resultados sostenibles.
-  </p>
-<a href="/contacto/" class="btn btn-primary mt-3">Contáctanos</a><br />
-  <a href="https://wa.me/573164433239" target="_blank" rel="noopener" class="btn btn-whatsapp mt-3">Escríbenos por WhatsApp</a>
-</header>
-
-<!-- Sección estratégica -->
-<section class="feature-section bg-light">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Texto -->
-      <div class="col-md-6">
-        <h2 class="fw-bold">¿Por qué FP Consultorías?</h2>
-        <p>
-          En un entorno competitivo, muchas pequeñas y medianas empresas enfrentan desafíos que limitan su crecimiento.
-          La falta de indicadores claros, procesos desorganizados y decisiones sin respaldo de datos afectan su rentabilidad.
-        </p>
-        <p>En FP Consultorías te ayudamos a:</p>
-        <ul>
-          <li>📊 Diseñar y controlar tus KPIs</li>
-          <li>🧩 Optimizar procesos con enfoque estratégico</li>
-          <li>📈 Tomar decisiones basadas en datos reales</li>
-        </ul>
-       <a href="/servicios/" class="btn btn-primary mt-3">Ver nuestros servicios</a>
-      </div>
-
-      <!-- Imagen -->
-      <div class="col-md-6 text-center mt-4 mt-md-0">
-        <img src="potencial_negocio.png.webp" alt="Consultoría en procesos para PYMES" loading="lazy">
+  <!-- SECCIÓN PRINCIPAL -->
+  <section class="feature-section bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Texto -->
+        <div class="col-md-6">
+          <h2 class="fw-bold">¿Por qué FP Consultorías?</h2>
+          <p>
+            En un entorno competitivo, muchas pequeñas y medianas empresas enfrentan desafíos que limitan su crecimiento.
+            La falta de indicadores claros, procesos desorganizados y decisiones sin respaldo de datos afectan su rentabilidad.
+          </p>
+          <p>En FP Consultorías te ayudamos a:</p>
+          <ul>
+            <li>📊 Diseñar y controlar tus KPIs</li>
+            <li>🧩 Optimizar procesos con enfoque estratégico</li>
+            <li>📈 Tomar decisiones basadas en datos reales</li>
+          </ul>
+          <a href="/servicios/" class="btn btn-primary mt-3">Ver nuestros servicios</a>
+        </div>
+        <!-- Imagen -->
+        <div class="col-md-6 text-center mt-4 mt-md-0">
+          <img src="potencial_negocio.png.webp" alt="Consultoría en procesos para PYMES" loading="lazy">
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Footer -->
-<footer>
- &copy; 2025 FP Consultorías. Todos los derechos reservados. | <a href="/contacto/">Política de privacidad</a>
-</footer>
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    &copy; 2025 FP Consultorías. Todos los derechos reservados. | <a href="/contacto/">Política de privacidad</a>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
