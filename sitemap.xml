@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.fpconsultorias.it.com/</loc>
+    <lastmod>2025-07-06</lastmod>
   </url>
   <url>
-    <loc>https://www.fpconsultorias.it.com/nosotros.html</loc>
+    <loc>https://www.fpconsultorias.it.com/nosotros/</loc>
+    <lastmod>2025-07-06</lastmod>
   </url>
   <url>
-    <loc>https://www.fpconsultorias.it.com/servicios.html</loc>
+    <loc>https://www.fpconsultorias.it.com/servicios/</loc>
+    <lastmod>2025-07-06</lastmod>
   </url>
   <url>
-    <loc>https://www.fpconsultorias.it.com/casos.html</loc>
+    <loc>https://www.fpconsultorias.it.com/casos/</loc>
+    <lastmod>2025-07-06</lastmod>
   </url>
   <url>
-    <loc>https://www.fpconsultorias.it.com/contacto.html</loc>
+    <loc>https://www.fpconsultorias.it.com/contacto/</loc>
+    <lastmod>2025-07-06</lastmod>
   </url>
 </urlset>
