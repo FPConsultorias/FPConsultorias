@@ -1,182 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5D6HZVHS');</script>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nosotros | FP Consultorías</title>
-
-  <!-- SEO -->
-  <meta name="description" content="Conoce la misión, visión y propósito de FP Consultorías. Transformamos retos empresariales en ventajas competitivas para el crecimiento sostenible." />
-  <meta name="keywords" content="consultoría empresarial, misión, visión, estrategia, procesos, mejora continua, KPIs, gestión empresarial, FP Consultorías" />
-  <meta name="author" content="FP Consultorías" />
-  <link rel="icon" href="https://raw.githubusercontent.com/FPConsultorias/Fpconsultorias/main/favicon.ico" />
-
-  <!-- Estilos -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nosotros | FP Consultorías</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
       font-size: 1.1rem;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
     }
-    h2, h3 {
+    h2 {
       color: #0056D2;
-    }
-    nav.navbar {
-      background-color: #0056D2;
-    }
-    .nav-link {
-      color: white !important;
-      font-weight: 500;
+      font-weight: 700;
     }
     p {
-      text-align: justify;
+      text-align: left;
+    }
+    .section {
+      padding: 3rem 1rem;
+    }
+    .img-fluid {
+      border-radius: 0.5rem;
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
     }
     footer {
+      background-color: #f1f1f1;
       text-align: center;
       padding: 1rem;
-      background: #f1f1f1;
+      font-size: 0.9rem;
       color: #444;
-      font-size: 0.95rem;
-    }
-    .btn-floating-whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-      z-index: 1000;
-    }
-    .btn-floating-whatsapp svg {
-      width: 28px;
-      height: 28px;
     }
   </style>
- <style>
-    .imagen-nosotros {
-      max-height: 450px;
-      border-radius: 0.5rem;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      margin: 1.5rem auto;
-      display: block;
-    }
-  </style>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "FP Consultorías",
-  "founder": {
-    "@type": "Person",
-    "name": "Fernando Pineda"
-  },
-  "url": "https://www.fpconsultorias.it.com/nosotros",
-  "description": "Somos una firma consultora especializada en transformar ideas en resultados mediante la mejora de procesos empresariales."
-}
-</script>
-
-  
 </head>
-
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D6HZVHS"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark px-3">
-    <a class="navbar-brand d-flex align-items-center" href="/">
-         <img src="/Logo.webp" alt="Logo FP Consultorías" class="img-fluid" style="max-height: 50px;">
-      FP Consultorías
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="menuNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link active" href="/nosotros/">Nosotros</a></li>
-        <li class="nav-item"><a class="nav-link" href="/servicios/">Servicios</a></li>
-        <li class="nav-item"><a class="nav-link" href="/casos/">Casos de Éxito</a></li>
-        <li class="nav-item"><a class="nav-link" href="/contacto/">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
+  <main class="container section">
+    <h2 class="text-center mb-5">Sobre Nosotros</h2>
 
-  <!-- CONTENIDO PRINCIPAL -->
-  <main class="container my-5">
-    <section>
-      <h2 class="text-center mb-4">Sobre Nosotros</h2>
-      <p><strong>Desbloqueando el Potencial de tu Negocio:</strong> En FP Consultorías entendemos los retos que enfrentan las pequeñas y medianas empresas. Nuestra misión es convertir esos desafíos en oportunidades a través de la estructuración estratégica de procesos, indicadores y gestión del cambio.</p>
-    </section>
-
-    <section class="my-5">
-      <h3>Objetivo</h3>
-      <p>Brindar a gerentes y empresarios la confianza de contar con información clara, precisa y útil para la toma de decisiones estratégicas, con procesos orientados a la mejora continua y la sostenibilidad operativa.</p>
-    </section>
-
-    <section class="my-5 row align-items-center">
+    <!-- Objetivo -->
+    <div class="row align-items-center mb-5">
       <div class="col-md-6">
-        <h3>Misión</h3>
+        <h4>Desbloqueando el Potencial de tu Negocio</h4>
+        <p>En FP Consultorías entendemos los retos que enfrentan las pequeñas y medianas empresas. Nuestra misión es convertir esos desafíos en oportunidades a través de la estructuración estratégica de procesos, indicadores y gestión del cambio.</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="/img/objetivo.webp" alt="Estrategia empresarial" class="img-fluid">
+      </div>
+    </div>
+
+    <!-- Misión -->
+    <div class="row align-items-center mb-5 flex-md-row-reverse">
+      <div class="col-md-6">
+        <h4>Misión</h4>
         <p>Ayudamos a las empresas a identificar y desbloquear su potencial real mediante la optimización de procesos, alineación estratégica y gestión de riesgos. Implementamos KPIs funcionales que permiten decisiones informadas y crecimiento continuo.</p>
       </div>
-      <div class="col-md-6 text-center mt-4 mt-md-0">
-  <img src="/Mision.webp" alt="Ilustración misión FP Consultorías" class="imagen-nosotros" loading="lazy">
+      <div class="col-md-6 text-center">
+        <img src="/img/mision.webp" alt="Misión FP Consultorías" class="img-fluid">
       </div>
-    </section>
+    </div>
 
-    <section class="my-5 row align-items-center">
-     <div class="col-md-6 text-center mb-4 mb-md-0">
- <img 
-  src="/Vision.webp" 
-  alt="Ilustración visión FP Consultorías" 
-  class="img-fluid rounded shadow imagen-nosotros" 
-  loading="lazy"
-  width="600" 
-  height="400">
-</div>
-<div class="col-md-6">
-        <h3>Visión</h3>
-        <p>En los próximos 5 años, seremos el aliado estratégico preferido de las organizaciones más dinámicas de la región Calima. Promovemos innovación, eficiencia y relaciones de confianza con nuestros clientes para construir un futuro empresarial más competitivo.</p>
+    <!-- Visión -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <h4>Visión</h4>
+        <p>En los próximos 5 años, seremos el aliado estratégico preferido de las organizaciones más dinámicas del Valle de Calima. Promovemos innovación, eficiencia y relaciones de confianza con nuestros clientes para construir un futuro empresarial más competitivo.</p>
       </div>
-    </section>
+      <div class="col-md-6 text-center">
+        <img src="/img/vision.webp" alt="Visión FP Consultorías" class="img-fluid">
+      </div>
+    </div>
 
-    <section class="my-5 text-center">
-      <h3>Nuestros Valores</h3>
-    <img src="/Valores1.webp" alt="Valores de FP Consultorías" class="imagen-nosotros" loading="lazy">
-     <p class="text-center mt-4">
-          👉 <a href="https://wa.me/573164433239" class="btn btn-success btn-lg" target="_blank">Solicita tu consultoría por WhatsApp</a>
-      </p>
-    </section>
+    <!-- Valores -->
+    <div class="row align-items-center mb-4 flex-md-row-reverse">
+      <div class="col-md-6">
+        <h4>Nuestros Valores</h4>
+        <p>Nos guiamos por la ética, la transparencia, el compromiso y la mejora continua. Estos valores son el núcleo de nuestra relación con los clientes y de cada solución que ofrecemos.</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="/img/valores.webp" alt="Valores corporativos" class="img-fluid">
+      </div>
+    </div>
   </main>
 
-  <!-- BOTÓN FLOTANTE WHATSAPP -->
-   <a href="https://wa.me/573164433239" class="btn-floating-whatsapp" target="_blank" aria-label="WhatsApp FP Consultorías">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 16 16">
-      <path d="M13.601 2.326a7.43 7.43 0 0 0-10.6 0 7.437 7.437 0 0 0-1.6 8.066L.165 15.093l4.775-1.253a7.424 7.424 0 0 0 3.584.914h.003a7.43 7.43 0 0 0 5.236-12.428Zm-5.236 11.28a6.226 6.226 0 0 1-3.173-.874l-.227-.135-2.829.743.755-2.754-.148-.236a6.27 6.27 0 1 1 5.622 3.256Z"/>
-    </svg>
-  </a>
-
-  <!-- FOOTER -->
   <footer>
-    &copy; 2025 FP Consultorías. Todos los derechos reservados.
+    © 2025 FP Consultorías. Todos los derechos reservados.
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
