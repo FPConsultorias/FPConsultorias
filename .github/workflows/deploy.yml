@@ -1,30 +1,30 @@
-name: Deploy a GitHub Pages
+name: Deploy GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
-  build-deploy:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Clonar el repositorio
-        uses: actions/checkout@v3
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
 
-      - name: Instalar Node.js
-        uses: actions/setup-node@v3
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Subir archivos
+        uses: actions/upload-pages-artifact@v3
         with:
-          node-version: '18'
+          path: .  # Usa la raíz donde está tu index.html
 
-      - name: Instalar dependencias
-        run: npm install
-
-      - name: Construir sitio
-        run: npm run build
-
-      - name: Deploy en GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+      - name: Desplegar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
