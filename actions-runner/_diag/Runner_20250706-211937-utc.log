@@ -1,0 +1,40 @@
+[2025-07-06 21:19:37Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-07-06 21:19:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Fernando\FPConsultorias\actions-runner\bin'
+[2025-07-06 21:19:37Z INFO HostContext] Well known directory 'Root': 'C:\Users\Fernando\FPConsultorias\actions-runner'
+[2025-07-06 21:19:37Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Fernando\FPConsultorias\actions-runner\.credentials'
+[2025-07-06 21:19:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Fernando\FPConsultorias\actions-runner\bin'
+[2025-07-06 21:19:37Z INFO HostContext] Well known directory 'Root': 'C:\Users\Fernando\FPConsultorias\actions-runner'
+[2025-07-06 21:19:37Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Fernando\FPConsultorias\actions-runner\.runner'
+[2025-07-06 21:19:37Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2025-07-06 21:19:37Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.19044.
+[2025-07-06 21:19:37Z INFO Listener] Version: 2.314.1
+[2025-07-06 21:19:37Z INFO Listener] Commit: 976290d966e6cc3e748a49bf8fdbe139ff764201
+[2025-07-06 21:19:37Z INFO Listener] Culture: es-CO
+[2025-07-06 21:19:37Z INFO Listener] UI Culture: es-ES
+[2025-07-06 21:19:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Fernando\FPConsultorias\actions-runner\bin'
+[2025-07-06 21:19:37Z INFO HostContext] Well known directory 'Root': 'C:\Users\Fernando\FPConsultorias\actions-runner'
+[2025-07-06 21:19:37Z INFO Listener] Validating directory permissions for: 'C:\Users\Fernando\FPConsultorias\actions-runner'
+[2025-07-06 21:19:37Z ERR  Terminal] WRITE ERROR: An error occurred: Permission to read the directory contents is required for 'C:\Users\Fernando\FPConsultorias\actions-runner' and each directory up the hierarchy. Access to the path 'C:\Users\Fernando\FPConsultorias' is denied.
+[2025-07-06 21:19:37Z ERR  Listener] System.UnauthorizedAccessException: Permission to read the directory contents is required for 'C:\Users\Fernando\FPConsultorias\actions-runner' and each directory up the hierarchy. Access to the path 'C:\Users\Fernando\FPConsultorias' is denied.
+ ---> System.UnauthorizedAccessException: Access to the path 'C:\Users\Fernando\FPConsultorias' is denied.
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerator`1..ctor(String directory, Boolean isNormalized, EnumerationOptions options)
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserEntries(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.EnumerateFileSystemEntries(String path)
+   at GitHub.Runner.Sdk.IOUtil.ValidateExecutePermission(String directory)
+   --- End of inner exception stack trace ---
+   at GitHub.Runner.Sdk.IOUtil.ValidateExecutePermission(String directory)
+   at GitHub.Runner.Listener.Program.MainAsync(IHostContext context, String[] args)
+[2025-07-06 21:19:37Z ERR  Listener] #####################################################
+[2025-07-06 21:19:37Z ERR  Listener] System.UnauthorizedAccessException: Access to the path 'C:\Users\Fernando\FPConsultorias' is denied.
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerator`1..ctor(String directory, Boolean isNormalized, EnumerationOptions options)
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserEntries(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.EnumerateFileSystemEntries(String path)
+   at GitHub.Runner.Sdk.IOUtil.ValidateExecutePermission(String directory)
