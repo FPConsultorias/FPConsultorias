@@ -10,6 +10,10 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: "deploy-pages"
+  cancel-in-progress: true
+
 jobs:
   deploy:
     environment:
@@ -27,8 +31,9 @@ jobs:
       - name: Subir archivos
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .  # Asegúrate de que aquí esté tu index.html
+          path: .  # Asegúrate que index.html y otros archivos estén aquí
 
       - name: Desplegar en GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
